@@ -1,0 +1,36 @@
+<template>
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button
+          type="button"
+          class="navbar-toggle collapsed"
+          data-toggle="collapse"
+          data-target="#navbar"
+          aria-expanded="false"
+          aria-controls="navbar"
+        >
+          <span class="sr-only">Toggle 33navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">ironman 2017 vue 111& vuex 2.0</a>
+      </div>
+      333
+      <div id="navbar" class="navbar-collapse collapse">
+        <!-- 設計為這段 slot 會插在 nav 的右邊（因為 css 設計） -->
+        <form class="navbar-form navbar-right">
+          <slot name="right">
+            <!-- 包裹在 slot 裡面的這段 code 是預設 -->11111
+          </slot>
+        </form>
+      </div>
+      <!--/.navbar-collapse -->
+    </div>
+  </nav>
+</template>
+
+<script></script>
+
+<style></style>
